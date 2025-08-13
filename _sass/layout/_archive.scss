@@ -79,9 +79,6 @@
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
-  .archive__item-title {
-    text-decoration: underline;
-  }
 }
 
 
@@ -212,7 +209,7 @@
         @include span(5 of 12 rtl);
       }
 
-      .archive__item-body {
+      .-body {
         @include span(7 of 12 last rtl);
         @include prefix(0.5 of 12);
         @include suffix(1 of 12);
