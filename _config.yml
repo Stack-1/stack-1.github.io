@@ -80,11 +80,11 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
+  book:
     title: 'Books'
-  manuscripts:
+  paper:
     title: 'Journal Articles'    
-  conferences:
+  conference:
     title: 'Conference Papers'
 
 # Site Settings
@@ -220,15 +220,18 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  conferences:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+  #publications:
+  #  output: true
+  #  permalink: /:collection/:path/
+  #portfolio:
+  #  output: true
+  #  permalink: /:collection/:path/
+  #talks:
+  #  output: true
+  #  permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -260,6 +263,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _conferences
+  - scope:
+      path: ""
+      type: conferences
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _publications
   - scope:
       path: ""
@@ -286,12 +298,6 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting

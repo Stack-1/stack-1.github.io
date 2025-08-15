@@ -38,6 +38,20 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.start_date | default: "1900-01-01" | date: "%Y" }} - {{ post.end_date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+                {% elsif post.collection == 'conferences' %}
+          <p> 
+            {% if post.venue %}
+            <b>Venue:</b> {{ post.venue}} <br />
+            {% endif %}
+            {% if post.location %} 
+            <b>Location:</b> {{post.location}} <br />
+            {% endif %}
+            {% if post.start_date and post.end_date %}
+              <b>Date:</b> {{ post.start_date | default: "1900-01-01" | date: "%B %d, %Y" }} - {{ post.end_date | default: "1900-01-01" | date: "%B %d, %Y" }}
+            {% elsif post.start_date %}
+              <b>Date:</b> {{ post.start_date | default: "1900-01-01" | date: "%B %d, %Y" }}
+            {% endif %}
+          </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}

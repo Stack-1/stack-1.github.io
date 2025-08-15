@@ -37,6 +37,12 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: 3rem;           /* bigger font */
+  font-weight: 800;          /* bold */
+  text-align: center;        /* center it */
+  margin-bottom: 1.5rem;     /* space below */
+  padding-bottom: 0.5rem;    /* spacing for the underline */
+  font-style: italic;                     /* adds a touch of sophistication */
 
   & + .page__meta {
     margin-top: -0.5em;
