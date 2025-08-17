@@ -21,6 +21,8 @@ redirect_from:
       });
     });
   </script>
+  <link rel="stylesheet" href="/assets/css/cv.css">
+
 </head>
 
 
@@ -69,7 +71,12 @@ redirect_from:
     <p><strong>Duration:</strong> 2022 - 2024</p>
     <p>
       <strong>Thesis:</strong> “Mixed-precision algorithms for linear systems on GPU accelerators”  
-      <a href="{{ '/files/msc_thesis.pdf' | relative_url }}" class="download-btn" target="_blank">📄 PDF</a>
+    </p>
+    <p style="margin:6px 0;">
+      <a href="{{ '/files/msc_thesis.pdf' | relative_url }}"
+          style="display:inline-block; padding:6px 12px; background-color:#007acc; color:white; text-decoration:none; border-radius:6px; font-weight:bold; font-size:0.9em;">
+      📄 Download Thesis (PDF)
+      </a>
     </p>
   </div>
 

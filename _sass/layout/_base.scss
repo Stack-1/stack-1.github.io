@@ -98,7 +98,6 @@ abbr[data-original-title] {
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
-  padding-right: 1em;
   font-style: italic;
   border-left: 0.25em solid var(--global-border-color);
 
@@ -107,7 +106,6 @@ blockquote {
 
     &:before {
       content: "\2014";
-      padding-right: 5px;
     }
   }
 }

@@ -35,6 +35,7 @@ author_profile: true
   🚀 Coming Soon!
 </div>
 
+<!-- 
 ## Workshop
 <div class="coming-soon" style="
      border: 2px dashed #ccc;
@@ -48,6 +49,7 @@ author_profile: true
      color: #555;">
   🚀 Coming Soon!
 </div>
+-->
 
 ## Summer School
 {% for post in site.conferences reversed %}

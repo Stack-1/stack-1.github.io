@@ -7,7 +7,6 @@
   @include clearfix;
   margin-top: 2em;
   padding-left: 1em;
-  padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
@@ -20,7 +19,6 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
   }
 
   .page__inner-wrap {
@@ -42,7 +40,6 @@
   text-align: center;        /* center it */
   margin-bottom: 1.5rem;     /* space below */
   padding-bottom: 0.5rem;    /* spacing for the underline */
-  font-style: italic;                     /* adds a touch of sophistication */
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -62,7 +59,7 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   /* paragraph indents */
@@ -137,8 +134,7 @@
 
     .wrapper {
       padding-left: 1em;
-      padding-right: 1em;
-
+      
       @include breakpoint($x-large) {
         max-width: $x-large;
       }
