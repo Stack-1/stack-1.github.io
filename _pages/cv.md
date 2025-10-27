@@ -30,6 +30,8 @@ redirect_from:
 <section class="cv-section">
   <h2>💼 Work Experience</h2>
 
+  <h3>Current Jobs</h3>
+
   <div class="cv-box">
     <h3>Software Engineer</h3>
     <p><strong>Duration:</strong> 2024 - Present</p>
@@ -37,6 +39,16 @@ redirect_from:
     <p><strong>Role / Responsibilities:</strong> Develop and optimize HPC solutions on GPU architectures, implement linear algebra algorithms, and support scientific computing workflows.</p>
     <p><strong>Type:</strong> Full Time</p>
   </div>
+
+  <div class="cv-box">
+    <h3>Teaching Tutor</h3>
+    <p><strong>Duration:</strong> 2025 - Present</p>
+    <p><strong>Company:</strong> Tor Vergata University</p>
+    <p><strong>Role / Responsibilities:</strong> Conducted lessons, guided hands-on exercises, and provided lab support to students.</p>
+    <p><strong>Type:</strong> Part Time</p>
+  </div>
+
+  <h3>Past Jobs</h3>
 
   <div class="cv-box">
     <h3>Software Engineer</h3>
